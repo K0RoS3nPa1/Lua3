@@ -538,7 +538,7 @@ function Library:create(options)
 	local closeButton = core:object("ImageButton", {
 		BackgroundTransparency = 1,
 		Size = UDim2.fromOffset(14, 14),
-		Position = UDim2.new(1, -11, 0, 12),
+		Position = UDim2.new(1, -11, 0, 15),
 		Theme = {ImageColor3 = "StrongText"},
 		Image = "http://www.roblox.com/asset/?id=8497487650",
 		AnchorPoint = Vector2.new(1)
@@ -583,7 +583,7 @@ function Library:create(options)
 		Image = "rbxassetid://6015897843",
 		ImageColor3 = Color3.new(0, 0, 0),
 		ImageTransparency = .6,
-		SliceCenter = Rect.new(47, 47, 450, 490),
+		SliceCenter = Rect.new(47, 47, 450, 450),
 		ScaleType = Enum.ScaleType.Slice,
 		SliceScale = 1
 	})
@@ -785,7 +785,7 @@ function Library:create(options)
 
 	local quickAccess = homePage:object("Frame", {
 		BackgroundTransparency = 1,
-		Size = UDim2.new(1, -20, 0, 160)
+		Size = UDim2.new(1, -20, 0, 260)
 	})
 
 	quickAccess:object("UIGridLayout", {
