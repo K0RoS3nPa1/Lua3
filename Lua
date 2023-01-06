@@ -592,7 +592,7 @@ function Library:create(options)
 		Theme = {BackgroundColor3 = {"Secondary", -10}},
 		AnchorPoint = Vector2.new(0.5, 1),
 		Position = UDim2.new(0.5, 0, 1, -20),
-		Size = UDim2.new(1, -10, 1, -50)
+		Size = UDim2.new(1, -10, 1, -52)
 	}):round(7) -- Sept
 
 	local status = core:object("TextLabel", {
@@ -601,7 +601,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Ui Updated | 05.01.2023",
+		Text = "Ui Updated | 06.01.2023",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
