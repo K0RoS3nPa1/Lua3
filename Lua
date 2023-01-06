@@ -1750,7 +1750,7 @@ function Library:button(options)
 	local icon = buttonContainer:object("ImageLabel", {
 		AnchorPoint = Vector2.new(1, 0.5),
 		BackgroundTransparency = 1,
-		Position = UDim2.new(1, -11, 0.0, 0),
+		Position = UDim2.new(1, -11, 0.5, 0),
 		Size = UDim2.fromOffset(26, 26),
 		Image = "rbxassetid://8498776661",
 		Theme = {ImageColor3 = "Tertiary"}
@@ -1840,7 +1840,7 @@ function Library:color_picker(options)
 	local icon = buttonContainer:object("ImageLabel", {
 		AnchorPoint = Vector2.new(1, 0.5),
 		BackgroundTransparency = 1,
-		Position = UDim2.new(1, -11, 0.5, 0),
+		Position = UDim2.new(1, -11, 0.0, 0),
 		Size = UDim2.fromOffset(26, 26),
 		Image = "rbxassetid://8604555937",
 		ImageColor3 = Library.CurrentTheme.Tertiary
