@@ -580,7 +580,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Size = UDim2.new(1, 47,1, 47),
 		ZIndex = 0,
-		Image = "rbxassetid://11347112400",
+		Image = "rbxassetid://6015897843",
 		ImageColor3 = Color3.new(0, 0, 0),
 		ImageTransparency = .6,
 		SliceCenter = Rect.new(47, 47, 450, 450),
@@ -592,7 +592,7 @@ function Library:create(options)
 		Theme = {BackgroundColor3 = {"Secondary", -10}},
 		AnchorPoint = Vector2.new(0.5, 1),
 		Position = UDim2.new(0.5, 0, 1, -20),
-		Size = UDim2.new(1, -10, 1, -49)
+		Size = UDim2.new(1, -10, 1, -50)
 	}):round(7) -- Sept
 
 	local status = core:object("TextLabel", {
@@ -632,7 +632,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=8569322835",
+		Image = "http://www.roblox.com/asset/?id=11347112400",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
