@@ -538,7 +538,7 @@ function Library:create(options)
 	local closeButton = core:object("ImageButton", {
 		BackgroundTransparency = 1,
 		Size = UDim2.fromOffset(14, 14),
-		Position = UDim2.new(1, -11, 0, 15),
+		Position = UDim2.new(1, -11, 0, 11),
 		Theme = {ImageColor3 = "StrongText"},
 		Image = "http://www.roblox.com/asset/?id=8497487650",
 		AnchorPoint = Vector2.new(1)
@@ -601,7 +601,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Ui Updated | 06.01.2023",
+		Text = "Updated | 05.01.2023",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -785,7 +785,7 @@ function Library:create(options)
 
 	local quickAccess = homePage:object("Frame", {
 		BackgroundTransparency = 1,
-		Size = UDim2.new(1, -20, 0, 260)
+		Size = UDim2.new(1, -20, 0, 160)
 	})
 
 	quickAccess:object("UIGridLayout", {
