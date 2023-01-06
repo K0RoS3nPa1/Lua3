@@ -368,7 +368,7 @@ function Library:lighten(color, f)
 	return Color3.fromHSV(h, math.clamp(s*f, 0, 1), math.clamp(v/f, 0, 1))
 end
 
--- old lighten/darken functions, may revert if contrast gets fucked up
+--[[ old lighten/darken functions, may revert if contrast gets fucked up
 	function Library:darken(color, f)
 		local h, s, v = Color3.toHSV(color)
 		f = f or 15
@@ -380,7 +380,7 @@ end
 		return Color3.fromHSV(h, s, math.clamp(v + (f/255), 0, 1))
 	end
 	
-
+]]
 
 local updateSettings = function() end
 
@@ -486,7 +486,7 @@ function Library:create(options)
 									Length = Library.DragSpeed	
 								}
 							end	
-							core.AbsoluteObject:TweenPosition(
+							--[[core.AbsoluteObject:TweenPosition(
 								UDim2.new(0, Mouse.X - ObjectPosition.X + (core.Size.X.Offset * core.AnchorPoint.X), 0, Mouse.Y - ObjectPosition.Y + (core.Size.Y.Offset * core.AnchorPoint.Y)),           
 								Enum.EasingDirection.In,
 								Enum.EasingStyle.Sine,
@@ -500,7 +500,7 @@ function Library:create(options)
 								Style = Enum.EasingStyle.Quad,
 								Length = Library.DragSpeed
 							}
-							)
+							)]]
 						end
 					end
 				end)
