@@ -395,22 +395,22 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("Pizza Place Hub.json") then
-			writefile("Pizza Place Hub.json", HTTPService:JSONEncode(settings))
+		if not isfile("K0RoS3n Hub.json") then
+			writefile("K0RoS3n Hub.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("Pizza Place Hub.json"))
+		settings = HTTPService:JSONDecode(readfile("K0RoS3n Hub.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("Pizza Place Hub.json", HTTPService:JSONEncode(settings))
+			writefile("K0RoS3n Hub.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
 	options = self:set_defaults({
-		Name = "Pizza Place Hub.json",
+		Name = "K0RoS3n Hub",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = ""
+		Link = nil
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
