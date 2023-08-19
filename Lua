@@ -395,19 +395,19 @@ function Library:create(options)
 	}
 
 	if readfile and writefile and isfile then
-		if not isfile("K0RoS3n Hub.json") then
-			writefile("K0RoS3n Hub.json", HTTPService:JSONEncode(settings))
+		if not isfile("K0RO Hub.json") then
+			writefile("K0RO Hub.json", HTTPService:JSONEncode(settings))
 		end
 		settings = HTTPService:JSONDecode(readfile("K0RoS3n Hub.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
-			writefile("K0RoS3n Hub.json", HTTPService:JSONEncode(settings))
+			writefile("K0RO Hub.json", HTTPService:JSONEncode(settings))
 		end
 	end
 
 	options = self:set_defaults({
-		Name = "K0RoS3n Hub",
+		Name = "K0RO Hub",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = nil
