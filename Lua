@@ -398,7 +398,7 @@ function Library:create(options)
 		if not isfile("K0RO Hub.json") then
 			writefile("K0RO Hub.json", HTTPService:JSONEncode(settings))
 		end
-		settings = HTTPService:JSONDecode(readfile("K0RoS3n Hub.json"))
+		settings = HTTPService:JSONDecode(readfile("K0RO Hub.json"))
 		Library.CurrentTheme = Library.Themes[settings.Theme]
 		updateSettings = function(property, value)
 			settings[property] = value
