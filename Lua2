@@ -1,13 +1,1 @@
-whitelisted = {
-   
-}
-
-
-if table.find (whitelisted, game:GetService("Players").LocalPlayer.UserId) then
-game.Players.LocalPlayer:Kick("\nYou are not whitelisted from script Owner!!...")
-				gui = game.CoreGui.RobloxPromptGui.promptOverlay:WaitForChild("ErrorPrompt")  
-				gui.TitleFrame.ErrorTitle.Text = "Koro Hub" 
-   
-else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/S3nKeTsu/Lua3/main/Lua1"))()
-end
