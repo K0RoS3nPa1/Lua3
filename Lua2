@@ -4,9 +4,9 @@ Bannlisted = {
 
 
 if table.find (Bannlisted, game:GetService("Players").LocalPlayer.UserId) then
-                game.Players.LocalPlayer:Kick("\nYou are banned from script Owner!!...")
-				gui = game.CoreGui.RobloxPromptGui.promptOverlay:WaitForChild("ErrorPrompt")  
-				gui.TitleFrame.ErrorTitle.Text = "K0RO Hub" 
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/S3nKeTsu/Lua3/main/Lua1"))()
 else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/S3nKeTsu/Lua3/main/Lua1"))()
+  game.Players.LocalPlayer:Kick("\nYou are not whitelisted from script Owner!!...")
+				gui = game.CoreGui.RobloxPromptGui.promptOverlay:WaitForChild("ErrorPrompt")  
+				gui.TitleFrame.ErrorTitle.Text = "Koro Hub" 
 end
